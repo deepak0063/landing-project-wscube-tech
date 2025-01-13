@@ -11,14 +11,71 @@
     <title>landing page</title>
 </head>
 <body>
-    <header class="container-fluid py-3 shadow-sm">
+
+    <!-- download Modal -->
+    <div class="modal fade" id="downloadShowModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Download Curriculum</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Thank You
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- book demo -->
+    <div class="modal fade" id="BookDemo">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Book Demo</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="bannerForm shadow-lg ">
+                    <h3>Book Demo</h3>
+                    <div class="mb-2">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-2">
+                        <label for="name" class="form-label">Email</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Number" class="form-label">Phone Number</label>
+                        <div class="input-group">
+                            <span class=" input-group-text">+91</span>
+                            <input type="text" class="form-control" placeholder="phone" >
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <button class="buttoninmodel">Register Now</button>
+                    </div>              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+    <header class="container-fluid py-3 bg-white shadow-sm position-sticky top-0">
         <div class="container">
             <div class="row align-item-center">
-                <figure class="col-lg-6 pb-0 mb-0">
+                <figure class="col-lg-6 col-12 text-md-start text-center pb-0 mb-0">
                     <img src="./images/logo.svg" alt="">
                 </figure>
                 <div class="col-lg-6 ">
-                    <div class="btn-outer d-flex gap-3 justify-content-end">
+                    <div class="btn-outer  ">
                         <button  type="button" class="whatsappbtn"> <i class="fa-brands fa-whatsapp"></i> Contact Us</button>
                         <button type="button" class=" call"> <i class="fa-solid fa-phone"></i> Call us</button>
                     </div>
@@ -27,6 +84,436 @@
         </div>
         
     </header>
+
+    <section class="container-fluid py-lg-5 py-sm-4 py-3">
+        <div class="container">
+            <div class="row justify-content-between gy-4 align-item-center">
+                <div class="col-lg-6">
+                    <div class="bannerContent">
+                        <h1 class="">Career Opportunities <br> in 
+                            <span class="bgimg">Digital Marketing</span> </h1>
+                            <p>Digital marketing course so good,you only pay-after-placement</p>
+                            <ul class="m-0 p-0">
+                                <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                            </ul>
+                            <div class="bannerContentBtn d-flex gap-3">
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#BookDemo" >Book 2 Days Demo</button>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#downloadShowModal" class=""> <i class="fa-solid fa-download"></i> Download Curriculum</button>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 ">
+                    <form action="" class="bannerForm shadow-lg ">
+                        <h3>Book Your Free Class Now!</h3>
+                        <p>2 days of free demo classes without <br>paying in advance!</p>
+                        <div class="mb-2">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-2">
+                            <label for="name" class="form-label">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Number" class="form-label">Phone Number</label>
+                            <div class="input-group">
+                                <span class=" input-group-text">+91</span>
+                                <input type="text" class="form-control" placeholder="phone" >
+                            </div>
+                        </div>
+                            <div class="mb-3 ">
+                                <button class="btn1">Register Now</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container shadow-lg mt-5 counter-section">
+            <div class="row p-4 row-cols-lg-5 row-cols-md-2 row-cols-2">
+                <div class="col">
+                    <h1>1000+</h1>
+                    <p>Students Trained</p>
+                </div>
+                <div class="col">
+                    <h1>₹4.5 LPA</h1>
+                    <p>Students Trained</p>
+                </div>
+                <div class="col">
+                    <h1>320++</h1>
+                    <p>Recruiting Partners</p>
+                </div>
+                <div class="col">
+                    <h1>10:00 am</h1>
+                    <p>Program Timings</p>
+                </div>
+                <div class="col">
+                    <h1>11th May</h1>
+                    <p>Next Batch Starts </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="highlights-section container-fluid py-5 ">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div>
+                        <h2>Key Highlights of the Course</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo vestibulum at orci.</p>
+                    </div>
+                </div>
+            </div>         
+            <div class="row gy-4">
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex align-item-start gap-3 highlightsItems">
+                        <img src="./images/Group 4488.png" alt="">
+                        <div>
+                            <h4>Assignments & <br> Modules tests</h4>
+                            <p>Test your knowledge</p>
+                        </div>
+                    </div>
+                </div>      
+
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex align-item-start gap-3 highlightsItems">
+                        <img src="./images/Group 4488.png" alt="">
+                        <div>
+                            <h4>Assignments & <br> Modules tests</h4>
+                            <p>Test your knowledge</p>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex align-item-start gap-3 highlightsItems">
+                        <img src="./images/Group 4488.png" alt="">
+                        <div>
+                            <h4>Assignments & <br> Modules tests</h4>
+                            <p>Test your knowledge</p>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex align-item-start gap-3 highlightsItems">
+                        <img src="./images/Group 4488.png" alt="">
+                        <div>
+                            <h4>Assignments & <br> Modules tests</h4>
+                            <p>Test your knowledge</p>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex align-item-start gap-3 highlightsItems">
+                        <img src="./images/Group 4488.png" alt="">
+                        <div>
+                            <h4>Assignments & <br> Modules tests</h4>
+                            <p>Test your knowledge</p>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex align-item-start gap-3 highlightsItems">
+                        <img src="./images/Group 4488.png" alt="">
+                        <div>
+                            <h4>Assignments & <br> Modules tests</h4>
+                            <p>Test your knowledge</p>
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="mb-3 text-center">
+                    <button class="btn2">Book Free Classes </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-lg-2 py-sm-4 mb-4 ">
+        <div class="container digitalMarketingSection ">
+            <div class="text-center">
+                <h2>Top career options in <br> Digital Marketing</h2>
+                <p class="textincontainer">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare pharetra.</p>
+            </div>
+            <div class="row d-flex align-item-center gap-3 ">
+                <div class="col-lg-3 col-sm-6 col-12 shadow-sm py-3 mainContainer">
+                    <img class="mb-3" src="./images/Group 4489.png" alt="">
+                    <h4>Content Marketer</h4>
+                    <p id="ptag">Lorem ipsum dolor sit amet, at orci Minima doloremque nam autem Lorem ipsum dolor sit amet this that.</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 shadow-sm py-3">
+                    <img class="mb-3" src="./images/Group 4489.png" alt="">
+                    <h4>Content Marketer</h4>
+                    <p id="ptag">Lorem ipsum dolor sit amet, at orci Minima doloremque nam autem Lorem ipsum dolor sit amet this that.</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 shadow-sm py-3">
+                    <img class="mb-3" src="./images/Group 4489.png" alt="">
+                    <h4>Content Marketer</h4>
+                    <p id="ptag">Lorem ipsum dolor sit amet, at orci Minima doloremque nam autem Lorem ipsum dolor sit amet this that.</p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 col-12 shadow-sm py-3">
+                    <img class="mb-3" src="./images/Group 4489.png" alt="">
+                    <h4>Content Marketer</h4>
+                    <p id="ptag">Lorem ipsum dolor sit amet, at orci Minima doloremque nam autem Lorem ipsum dolor sit amet this that.</p>
+                </div>              
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid py-lg-5 py-sm-4 py-3">
+        <div class="container certifiedSection py-4">
+            <div class="row justify-content-between align-item-center">
+                <div class="col-lg-6 ">
+                    <div class="certifiedSectioninsidedivn p-4 ">
+                        <h1 class="">Get Certified </h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aut  facilis dolores quibusdam 
+                            voluptatibus.</p>
+                            
+                                <div class="row gy-4">
+
+                                    <div class="bg-white shadow-sm">
+                                        <div class="d-flex align-item-center gap-3">
+                                            <img src="./images/Group 4489.png" alt="">
+                                            <div>
+                                                <h4>Official and verifie</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo vestibulum at orci.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class=" bg-white shadow-sm p-3 ">
+                                        <div class="d-flex align-item-center gap-3">
+                                            <img src="./images/Group 4489.png" alt="">
+                                            <div>
+                                                <h4>Official and verifie</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo vestibulum at orci.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="bg-white shadow-sm p-3 ">
+                                        <div class="d-flex align-item-center gap-3">
+                                            <img src="./images/Group 4489.png" alt="">
+                                            <div>
+                                                <h4>Official and verifie</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo vestibulum at orci.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                        
+                            <div class="bannerContentBtn mt-4">
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#BookDemo" >Book Free Class</button>    
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 ">
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid py-5 bg-secondary-subtle">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class=" text-center fw-bold">Digital Marketing Course <br> FAQs</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare pharetra.</p>
+                </div>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+
+        <section class="container-fluid">
+
+        </section>
+    </section>
+    
+
+    <section class="container-fluid bg-white py-5 ">
+        
+        <div class=" container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold"> Curriculam of Digital Marketing</h2>
+                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#introduction" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Introduction</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#casestudies" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Case-Studies</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#googleadsense" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Google Adsense</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#SEOmastery" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">SEO mastery</button>
+                            </li>
+                                                       
+                          </ul>
+                          <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="introduction" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="row shadow-lg p-4 bannerContent ">
+                                    <div class="col-lg-6">
+                                        <ul class="m-0 p-0">
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="m-0 p-0">
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="casestudies" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                <div class="row shadow-lg p-4 bannerContent ">
+                                    <div class="col-lg-6">
+                                        <ul class="m-0 p-0">
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="m-0 p-0">
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                        </ul>
+                                    </div>
+                                </div>  
+                            </div>
+
+                            <div class="tab-pane fade" id="googleadsense" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                <div class="row shadow-lg p-4 bannerContent ">
+                                    <div class="col-lg-6">
+                                        <ul class="m-0 p-0">
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="m-0 p-0">
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="SEOmastery" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                <div class="row shadow-lg p-4 bannerContent ">
+                                    <div class="col-lg-6">
+                                        <ul class="m-0 p-0">
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <ul class="m-0 p-0">
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Specialization: Performance Marketing</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> Min salary of Rs 4.5 LPA</li>
+                                            <li class="mb-3"> <i class="fa-solid fa-circle-check"></i> 50 seats only</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
 
 
 </body>
